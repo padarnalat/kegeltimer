@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Set Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Gym Timer</h1>
+
+  <label>Set Time (sec)
+    <input type="number" id="setTime" value="5">
+  </label>
+
+  <label>Rest Time (sec)
+    <input type="number" id="restTime" value="90">
+  </label>
+
+  <label>Total Sets
+    <input type="number" id="totalSets" value="4">
+  </label>
+
+  <div id="circle" class="circle set">
+    <div id="time">5</div>
+    <div id="mode">Sec</div>
+  </div>
+
+  <div>Set 
+  <span id="currentSet">1</span> / <span id="totalSetsDisplay">4</span>
+  </div>
+  <div class="buttons">
+  <button id="startStop">Start</button>
+  <button id="reset">Reset</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

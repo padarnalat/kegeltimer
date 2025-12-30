@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+  width: 320px;
+}
+
+.inputs label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+}
+.circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: white;
+  margin: 20px auto;
+  transition: background 0.5s ease;
+}
+
+.set { background: red; }
+.rest { background: blue; }
+
+#mode {
+  font-size: 16px;
+}
+
+#mode {
+  font-size: 16px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
