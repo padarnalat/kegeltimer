@@ -2,6 +2,7 @@ const timerEl = document.getElementById('time');
 const modeEl = document.getElementById('mode');
 const circle = document.getElementById('circle');
 const setEl = document.getElementById('currentSet');
+const setE2 = document.getElementById('totalSetsDisplay');
 const btn = document.getElementById('startStop');
 const closeBtn = document.getElementById('closeBtn');
 const resetBtn = document.getElementById('resetBtn');
@@ -39,7 +40,8 @@ btn.addEventListener('click', async () => {
     modeEl.textContent = 'SET';
     circle.className = 'circle set';
     setEl.textContent = currentSet;
-
+    setE2.textContent = totalSets;
+    
     for (let t = 1; t <= setTime; t++) {
       if (stopRequested) break;
       timerEl.textContent = t;
@@ -105,3 +107,4 @@ closeBtn.addEventListener('click', () => {
 
   circle.className = 'circle';   // reset color
 });
+
